@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Shreyash Choubey // Systems &amp; Intelligence Engineering</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,600;0,700;1,600;1,700&amp;family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&amp;family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-fixed-dim": "#ffb786",
+          "on-secondary-container": "#ffede1",
+          "on-secondary-fixed-variant": "#6e3900",
+          "on-primary-container": "#602d00",
+          "surface": "#131315",
+          "tertiary-fixed": "#e4e1e9",
+          "secondary-container": "#a65900",
+          "primary-container": "#ff8412",
+          "surface-container-low": "#1c1b1e",
+          "secondary-fixed-dim": "#ffb77c",
+          "on-primary-fixed-variant": "#723600",
+          "surface-container-lowest": "#0e0e10",
+          "on-secondary-fixed": "#2e1500",
+          "on-primary": "#502400",
+          "tertiary": "#c8c5cd",
+          "on-tertiary-container": "#3b3a41",
+          "surface-bright": "#39393b",
+          "background": "#131315",
+          "outline": "#a68c7c",
+          "tertiary-fixed-dim": "#c8c5cd",
+          "error-container": "#93000a",
+          "inverse-primary": "#964900",
+          "secondary": "#ffb77c",
+          "error": "#ffb4ab",
+          "tertiary-container": "#a6a4ac",
+          "surface-container-high": "#2a2a2c",
+          "on-background": "#e5e1e4",
+          "surface-container": "#201f22",
+          "primary": "#ffb786",
+          "surface-dim": "#131315",
+          "on-tertiary": "#303036",
+          "on-tertiary-fixed-variant": "#47464d",
+          "on-surface": "#e5e1e4",
+          "outline-variant": "#574235",
+          "primary-fixed": "#ffdcc6",
+          "on-tertiary-fixed": "#1b1b21",
+          "on-primary-fixed": "#311400",
+          "surface-tint": "#ffb786",
+          "surface-variant": "#353437",
+          "on-error": "#690005",
+          "on-secondary": "#4d2600",
+          "secondary-fixed": "#ffdcc3",
+          "surface-container-highest": "#353437",
+          "on-error-container": "#ffdad6",
+          "inverse-surface": "#e5e1e4",
+          "inverse-on-surface": "#313032",
+          "on-surface-variant": "#dec1af"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter": "1.5rem",
+          "margin": "3rem",
+          "space-xs": "0.25rem",
+          "space-xl": "3rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1.25rem"
+        },
+        "fontFamily": {
+          "display-hero": [
+            "Archivo Narrow"
+          ],
+          "headline-md": [
+            "Archivo Narrow"
+          ],
+          "headline-xl-mobile": [
+            "Archivo Narrow"
+          ],
+          "mono-micro": [
+            "JetBrains Mono"
+          ],
+          "mono-lg": [
+            "JetBrains Mono"
+          ],
+          "body-lg": [
+            "Hanken Grotesk"
+          ],
+          "headline-lg-mobile": [
+            "Archivo Narrow"
+          ],
+          "body-sm": [
+            "Hanken Grotesk"
+          ],
+          "headline-xl": [
+            "Archivo Narrow"
+          ],
+          "body-md": [
+            "Hanken Grotesk"
+          ],
+          "display-hero-mobile": [
+            "Archivo Narrow"
+          ],
+          "headline-lg": [
+            "Archivo Narrow"
+          ],
+          "mono-sm": [
+            "JetBrains Mono"
+          ]
+        },
+        "fontSize": {
+          "display-hero": [
+            "84px",
+            {
+              "lineHeight": "88px",
+              "letterSpacing": "-0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "32px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "mono-micro": [
+            "9px",
+            {
+              "lineHeight": "12px",
+              "letterSpacing": "0.12em",
+              "fontWeight": "500"
+            }
+          ],
+          "mono-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "56px",
+            {
+              "lineHeight": "60px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "44px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "mono-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-margin-mobile md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="identity" href="#"><span class="w-2 h-2 bg-primary rounded-none shadow-[0_0_8px_rgba(255,132,18,0.6)]"></span><span class="font-mono-lg text-mono-lg uppercase tracking-tight text-on-surface group-hover:text-primary transition-colors">SHREYASH CHOUBEY <span class="text-outline-variant font-normal">// 01</span></span></a><div class="hidden xl:flex items-center gap-space-sm pl-space-md bg-surface-container-lowest/80 px-space-sm py-1"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container shadow-[0_0_10px_rgba(255,132,18,0.8)]"></span></span><span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">AVAILABLE FOR S27 INTERNSHIPS // SEMESTER 3</span></div></div><nav class="hidden lg:flex items-center gap-1 bg-surface-container-lowest/60 p-1" data-active-classes="bg-surface-container-high text-primary font-bold"><a aria-current="page" class="px-3 py-1.5 uppercase transition-colors bg-surface-container-high text-primary font-bold" data-path="identity" href="#">Identity</a><a class="px-3 py-1.5 font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="engineering" href="#">Engineering</a><a class="px-3 py-1.5 font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="architecture" href="#">Architecture</a><a class="px-3 py-1.5 font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="recognition" href="#">Recognition</a><a class="px-3 py-1.5 font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="index" href="#">Index</a><a class="px-3 py-1.5 font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="inquire" href="#">Inquire</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:flex items-center gap-1 px-3 py-1.5 bg-surface-container-low font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://github.com/shreyashchoubey" rel="noopener noreferrer" target="_blank"><span class="text-primary font-mono-sm text-mono-sm">&gt;_</span><span>GitHub</span></a><a class="hidden sm:flex items-center gap-1 px-3 py-1.5 bg-surface-container-low font-mono-sm text-mono-sm uppercase text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" href="https://linkedin.com/in/shreyashchoubey" rel="noopener noreferrer" target="_blank"><span class="text-primary font-mono-sm text-mono-sm">//</span><span>LinkedIn</span></a><div class="flex items-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1X63YMr-1DwadRRdfTLAeGsgTRHTI0fbJDtTXGbTYfIEwdNe6793Td5sENXSWeAR3KBPjv7Rc2AN-aZ7giLzinaim-YKJDCMuSQmQbhJ4QwbwZR9WgBOnxFpVxUrHo0oY9_KJETWCqofnkdLJ1i57LwZgtNiqSIwVPjaTR8mffRNoOdJd1AEtiCXNb5WBGYMMJDPFcBG6ArHxfufjSECpdv2xW4g0gKO2NYhGvU1K6jblcPmFF9AzVRZGeFcZLRWQEQow8m5T6e9m8"/></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen relative"><div class="flex flex-col w-full text-on-surface">
+<!-- ========================================== -->
+<!-- 01. HERO: THE KINETIC MONOLITH              -->
+<!-- ========================================== -->
+<section class="relative w-full px-margin-mobile md:px-margin py-space-xl overflow-hidden bg-surface-container-lowest">
+<!-- Subtle Ambient Thermal Glow (Backdrop) -->
+<div class="absolute -top-32 left-1/4 w-[600px] h-[600px] rounded-full bg-primary-container/10 blur-[140px] pointer-events-none"></div>
+<div class="absolute top-1/2 -right-24 w-[480px] h-[480px] rounded-full bg-secondary-container/10 blur-[130px] pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column: Editorial Headline & Manifest -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Eyebrow Metadata Chip -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-low shadow-sm">
+<span class="w-1.5 h-1.5 bg-primary shadow-[0_0_8px_rgba(255,132,18,0.9)]"></span>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider">
+              19°00'N 72°59'E // MUMBAI UNIVERSITY // SEMESTER 03
+            </span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-low/80 shadow-sm">
+<span class="font-mono-micro text-mono-micro uppercase text-primary font-semibold tracking-wider">SYS.ARCH // BUILD.2026</span>
+</div>
+</div>
+<!-- Hero Headline -->
+<div class="flex flex-col">
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero uppercase tracking-tight text-on-surface leading-[0.95]">
+            SHREYASH <span class="text-transparent" style="-webkit-text-stroke: 1.5px #dec1af;">CHOUBEY</span>
+</h1>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase text-primary font-bold tracking-tight block">
+              BUILDING IDEAS INTO SOMETHING REAL.
+            </span>
+</div>
+</div>
+<!-- Academic Subtext -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Computer Engineering undergraduate at <span class="text-on-surface font-medium">Datta Meghe College of Engineering (DMCE)</span>. Developing pragmatic web systems, learning through continuous production deployments, and engineering resilient, low-latency software interfaces.
+        </p>
+<!-- Live Status Indicator Pill -->
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-surface-container-high w-fit shadow-md">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary shadow-[0_0_10px_#ff8412]"></span>
+</span>
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-medium tracking-wide">
+            Actively seeking Software Engineering &amp; Frontend Internships
+          </span>
+</div>
+<!-- CTA Action Group -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="px-6 py-3.5 bg-primary-container text-on-primary font-mono-lg text-mono-lg uppercase font-bold tracking-wider hover:bg-primary transition-all shadow-[0_0_24px_rgba(255,132,18,0.3)] hover:shadow-[0_0_32px_rgba(255,132,18,0.5)] flex items-center gap-2" href="#flagship-work">
+<span>EXPLORE FLAGSHIP WORK</span>
+<span class="material-symbols-outlined text-lg leading-none">arrow_downward</span>
+</a>
+<a class="px-5 py-3.5 bg-surface-container-low text-on-surface font-mono-lg text-mono-lg uppercase font-medium hover:bg-surface-container-high transition-all shadow-sm flex items-center gap-2" href="https://github.com/shreyash-128" rel="noopener noreferrer" target="_blank">
+<span class="text-primary">&gt;_</span>
+<span>GITHUB REPOSITORIES</span>
+</a>
+<a class="px-4 py-3.5 bg-surface-container-low text-on-surface-variant font-mono-lg text-mono-lg uppercase hover:text-primary hover:bg-surface-container-high transition-all shadow-sm flex items-center gap-1.5" href="https://www.linkedin.com/in/shreyash-choubey-054a2b362/" rel="noopener noreferrer" target="_blank">
+<span class="text-primary">//</span>
+<span>LINKEDIN</span>
+</a>
+</div>
+</div>
+<!-- Right Column: 3D Kinetic Monolith Canvas Stage -->
+<div class="lg:col-span-5 relative w-full h-[460px] md:h-[540px] flex items-center justify-center bg-surface-container-lowest shadow-2xl overflow-hidden group">
+<!-- HUD Coordinates Overlay -->
+<div class="absolute top-4 left-4 z-20 flex flex-col gap-1 pointer-events-none">
+<span class="font-mono-micro text-mono-micro text-primary uppercase tracking-widest">[ KINETIC_STAGE // 01 ]</span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant tracking-wider" id="hud-axis">[ AXIS: X-34.8° Y+12.2° ]</span>
+</div>
+<div class="absolute top-4 right-4 z-20 flex flex-col items-end gap-1 pointer-events-none">
+<span class="font-mono-micro text-mono-micro text-on-surface-variant tracking-widest">[ CORE_LUMEN: 98.4% ]</span>
+<span class="font-mono-micro text-mono-micro text-primary-fixed uppercase tracking-wider">[ SYSTEM_ID: SC-2026 ]</span>
+</div>
+<div class="absolute bottom-4 left-4 z-20 flex items-center gap-2 pointer-events-none">
+<span class="w-1.5 h-1.5 bg-primary"></span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant tracking-widest">INTERACTIVE 3D PARALLAX RIG</span>
+</div>
+<div class="absolute bottom-4 right-4 z-20 font-mono-micro text-mono-micro text-outline-variant pointer-events-none">
+          [ 60 FPS // RENDER-ENGINE ]
+        </div>
+<!-- Active Canvas Stage -->
+<canvas class="w-full h-full cursor-grab active:cursor-grabbing block relative z-10" id="kinetic-stage"></canvas>
+<!-- Fallback Monolith Graphic (SVG Technical Instrument) -->
+<div class="hidden absolute inset-0 z-0 items-center justify-center p-8 pointer-events-none" id="monolith-fallback">
+<svg class="w-72 h-72 text-primary" fill="none" viewbox="0 0 320 320">
+<polygon points="160,20 280,90 280,230 160,300 40,230 40,90" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.5"></polygon>
+<polygon fill="#1c1b1e" fill-opacity="0.8" points="160,50 250,105 250,215 160,270 70,215 70,105" stroke="#ff8412" stroke-width="2"></polygon>
+<circle cx="160" cy="160" fill="#ff8412" fill-opacity="0.8" filter="drop-shadow(0 0 12px #ff8412)" r="30"></circle>
+<line stroke="#ffb786" stroke-dasharray="4 4" stroke-opacity="0.4" x1="160" x2="160" y1="20" y2="300"></line>
+<line stroke="#ffb786" stroke-dasharray="4 4" stroke-opacity="0.4" x1="40" x2="280" y1="160" y2="160"></line>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 02. IDENTITY & ACADEMIC GROUNDING (ABOUT)   -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface">
+<!-- Section Identifier Bar -->
+<div class="w-full flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 bg-primary shadow-[0_0_8px_rgba(255,132,18,0.7)]"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-on-surface-variant font-bold">
+          01 // IDENTITY &amp; ACADEMIC GROUNDING
+        </span>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline tracking-widest uppercase">
+        LOC: [19.0760° N, 72.8777° E] // ARCH: MUMBAI
+      </span>
+</div>
+<!-- Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Narrative Bio Card -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<span class="font-mono-micro text-mono-micro uppercase text-primary tracking-wider">[ PHILOSOPHY &amp; PEDAGOGY ]</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">
+            "The fastest way to understand complex systems is to build them from the ground up."
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            I am a Computer Engineering student currently traversing Semester 3 at Datta Meghe College of Engineering, Airoli. Rather than stopping at textbook specifications, my engineering philosophy prioritizes empirical software delivery: designing client-side runtimes, architecting database models, and deploying reliable digital systems.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            My daily focus is centered on foundational computer science principles—data structures, memory-efficient algorithms, and distributed web infrastructure—grounded in hands-on application deployment.
+          </p>
+</div>
+<div class="pt-space-md mt-space-md bg-surface-container-lowest p-space-md shadow-inner flex items-center justify-between">
+<div>
+<div class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">COMMITTED TO EXCELLENCE</div>
+<div class="font-headline-md text-headline-md text-on-surface uppercase font-bold tracking-tight">CLASS OF 2029</div>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+</div>
+</div>
+<!-- Professional Portrait Frame with Corner Mechanical Brackets -->
+<div class="lg:col-span-3 bg-surface-container-low p-space-md shadow-md flex flex-col justify-between relative group">
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-lowest shadow-inner">
+<!-- Editorial Technical Image Display -->
+<img alt="Shreyash Choubey - Systems and Intelligence Engineer" class="w-full h-full object-cover object-center filter grayscale contrast-125 group-hover:filter-none transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzYvI3j8LcKagkmVlyDY_eLsIEop0P0EAXYOO0-rEOi2_7VwG1o__rSmORVPrmaC88meNyMygxix5Tib5nnuCafbaYnB92srIvc8PEizsdTkLVA0mn9GtLhIlLgIf1cQDNd2yOeJOBlUzC1BU79FammKva6yWtUmt75xua9tKFceIl0kmnWqjpIA8EKiCKVDmrRHn6hWbbB6-ggSruuBCPUiByy9dnIuKWrz6lCCsy3Ri0Y6KvT9pkkLnsXlxXZF5Xthg"/>
+<!-- Top-left Technical Bracket Accent -->
+<div class="absolute top-2 left-2 z-10 px-1.5 py-0.5 bg-surface-container-lowest/80 backdrop-blur-sm">
+<span class="font-mono-micro text-mono-micro text-primary uppercase font-bold">PORTRAIT // 01</span>
+</div>
+<!-- Bottom Coordinates Overlay -->
+<div class="absolute bottom-2 right-2 z-10 px-2 py-0.5 bg-surface-container-lowest/90 backdrop-blur-sm">
+<span class="font-mono-micro text-mono-micro text-on-surface-variant tracking-widest font-mono">ID: SC-DMCE</span>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="font-mono-sm text-mono-sm uppercase text-on-surface font-semibold">Shreyash Choubey</div>
+<div class="font-mono-micro text-mono-micro uppercase text-primary">DEV // STUDENT</div>
+</div>
+</div>
+<!-- Precision Technical Specifications Table HUD -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-mono-micro text-mono-micro uppercase text-primary tracking-wider">[ ACADEMIC SPECIFICATION ]</span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant font-mono">STATUS: ENROLLED</span>
+</div>
+<div class="divide-y divide-surface-container-high flex flex-col">
+<div class="py-3 flex flex-col gap-0.5">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">INSTITUTION</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Datta Meghe College of Engineering (DMCE), Airoli</span>
+</div>
+<div class="py-3 flex flex-col gap-0.5">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">UNIVERSITY AFFILIATION</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">University of Mumbai</span>
+</div>
+<div class="py-3 flex flex-col gap-0.5">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">DEGREE PROGRAM</span>
+<span class="font-body-md text-body-md font-semibold text-primary">Bachelor of Engineering (B.E.), Computer Engineering</span>
+</div>
+<div class="py-3 flex flex-col gap-0.5">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">ACADEMIC STANDING</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Second Year, Semester 3 (Active)</span>
+</div>
+<div class="py-3 flex flex-col gap-0.5">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">CORE FOCUS DOMAINS</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Web Application Architecture, High-Concurrency Frontends, Firebase Cloud Platforms</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-2">
+<span class="w-2 h-2 bg-primary"></span>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider">
+            VERIFIED REGISTRATION // DMCE COMP DEPT
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 03. FEATURED WORK 01: MUSTUDYSPHERE        -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest" id="flagship-work">
+<!-- Section Identifier Header -->
+<div class="w-full flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 bg-primary-container shadow-[0_0_8px_rgba(255,132,18,0.9)]"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-primary font-bold">
+          02 // FLAGSHIP SYSTEM DEPLOYMENT
+        </span>
+</div>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant uppercase tracking-widest">
+        METRIC: PRODUCTION // LIVE TRAFFIC
+      </span>
+</div>
+<!-- Main Flagship Deep-Dive Panel -->
+<div class="bg-surface-container-low p-space-lg md:p-space-xl shadow-xl flex flex-col gap-space-xl">
+<!-- Top Title & Narrative Meta Bar -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm mb-1">
+<span class="px-2.5 py-0.5 bg-secondary-container text-on-secondary-container font-mono-micro text-mono-micro uppercase font-bold tracking-wider">
+              FLAGSHIP 01
+            </span>
+<span class="px-2.5 py-0.5 bg-surface-container-high text-on-surface-variant font-mono-micro text-mono-micro uppercase tracking-wider">
+              ACADEMIC UTILITY PLATFORM
+            </span>
+<span class="px-2.5 py-0.5 bg-surface-container-high text-primary font-mono-micro text-mono-micro uppercase tracking-wider">
+              CLOUDFLARE EDGE
+            </span>
+</div>
+<h3 class="font-display-hero text-display-hero-mobile md:text-headline-xl text-on-surface uppercase tracking-tight font-bold">
+            MUStudySphere
+          </h3>
+<p class="font-headline-md text-headline-md text-primary font-semibold tracking-tight mt-1">
+            Centralizing the fragmented academic workflow for thousands of Mumbai University engineering students.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed mt-2">
+            Engineered to resolve real-world pain points experienced by undergraduates across Mumbai University colleges. MUStudySphere consolidates official question papers, lecture modules, dynamic attendance calculators, and CGPA prediction algorithms into a single reactive portal.
+          </p>
+</div>
+<!-- Direct Production Triggers -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm lg:items-end justify-start">
+<a class="w-full sm:w-auto px-6 py-3.5 bg-primary-container text-on-primary font-mono-lg text-mono-lg uppercase font-bold tracking-wider hover:bg-primary transition-all shadow-[0_0_20px_rgba(255,132,18,0.35)] flex items-center justify-center gap-2" href="https://mustudysphere.pages.dev/" rel="noopener noreferrer" target="_blank">
+<span>LAUNCH LIVE SYSTEM</span>
+<span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+<a class="w-full sm:w-auto px-5 py-3 bg-surface-container-high text-on-surface font-mono-sm text-mono-sm uppercase font-semibold hover:bg-surface-bright transition-all shadow-sm flex items-center justify-center gap-2" href="https://github.com/shreyash-128/MUStudySphere" rel="noopener noreferrer" target="_blank">
+<span class="text-primary font-mono">&lt;/&gt;</span>
+<span>AUDIT SOURCE CODE</span>
+</a>
+<div class="font-mono-micro text-mono-micro uppercase text-on-surface-variant flex items-center gap-1.5 mt-1">
+<span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span>
+<span>MUSTUDYSPHERE.PAGES.DEV</span>
+</div>
+</div>
+</div>
+<!-- Architectural Breakdown: 4 Structured Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pillar 1: Modular Architecture -->
+<div class="bg-surface-container-lowest p-space-md shadow-md flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-primary">
+<span class="font-mono-micro text-mono-micro uppercase font-bold tracking-widest">[ COMPONENT ENGINE ]</span>
+<span class="material-symbols-outlined text-xl">layers</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Modular Frontend</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Constructed with React and Vite for rapid HMR and tree-shaken bundles. Styling orchestrated via Tailwind CSS ensuring zero runtime CSS overhead and immediate client hydration.
+            </p>
+</div>
+<div class="pt-4 mt-2">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">METRIC: &lt;100MS HYDRATION</span>
+</div>
+</div>
+<!-- Pillar 2: Cloud Infrastructure -->
+<div class="bg-surface-container-lowest p-space-md shadow-md flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-primary">
+<span class="font-mono-micro text-mono-micro uppercase font-bold tracking-widest">[ CLOUD PERSISTENCE ]</span>
+<span class="material-symbols-outlined text-xl">cloud_sync</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Firebase Core</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Firestore document storage powers lightning-fast collection streaming. Firebase Authentication provides protected student credential sessions with role-governed database read rules.
+            </p>
+</div>
+<div class="pt-4 mt-2">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">ENGINE: FIRESTORE + AUTH</span>
+</div>
+</div>
+<!-- Pillar 3: Specialized Toolset -->
+<div class="bg-surface-container-lowest p-space-md shadow-md flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-primary">
+<span class="font-mono-micro text-mono-micro uppercase font-bold tracking-widest">[ ALGORITHMIC TOOLS ]</span>
+<span class="material-symbols-outlined text-xl">calculate</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Student Toolkit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Embedded client-side mathematical engines: Dynamic 75% attendance threshold calculators, previous year question paper catalogs, and weighted semester CGPA projections.
+            </p>
+</div>
+<div class="pt-4 mt-2">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">PYQS // CALCULATORS // SYLLABUS</span>
+</div>
+</div>
+<!-- Pillar 4: Production Global Edge -->
+<div class="bg-surface-container-lowest p-space-md shadow-md flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between text-primary">
+<span class="font-mono-micro text-mono-micro uppercase font-bold tracking-widest">[ EDGE PIPELINE ]</span>
+<span class="material-symbols-outlined text-xl">dns</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase font-bold">Cloudflare Global</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Continuous delivery from main branch deployed worldwide across Cloudflare Pages edge locations. Sub-second TTFB across Tier 1, 2, and 3 Indian internet service providers.
+            </p>
+</div>
+<div class="pt-4 mt-2">
+<span class="font-mono-micro text-mono-micro text-outline uppercase">SLA: 99.98% CONTINUOUS</span>
+</div>
+</div>
+</div>
+<!-- Technical Telemetry Output Bar -->
+<div class="bg-surface-container-lowest p-space-md flex flex-wrap items-center justify-between gap-space-sm font-mono-micro text-mono-micro text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="text-primary font-bold">SYSTEM TELEMETRY:</span>
+<span>REPO: SHREYASH-128/MUSTUDYSPHERE</span>
+<span class="text-outline-variant">|</span>
+<span>BRANCH: MAIN</span>
+<span class="text-outline-variant">|</span>
+<span>BUILD: CLOUDFLARE-CI/CD</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface">
+<span class="w-2 h-2 bg-primary"></span>
+<span>PRODUCTION LIVE VERIFIED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 04. FEATURED WORK 02: EVENT MANAGEMENT    -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface">
+<!-- Section Identifier Header -->
+<div class="w-full flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 bg-primary shadow-[0_0_8px_rgba(255,132,18,0.7)]"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-on-surface-variant font-bold">
+          03 // DISTRIBUTED EVENT SYSTEMS
+        </span>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline tracking-widest uppercase">
+        SPEC: ASYNCHRONOUS STATE
+      </span>
+</div>
+<!-- Structured Single System Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<div class="lg:col-span-8 bg-surface-container-low p-space-lg md:p-space-xl shadow-md flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 bg-surface-container-high text-primary font-mono-micro text-mono-micro uppercase tracking-wider font-bold">
+              SYSTEM 02
+            </span>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider">
+              EVENT ORCHESTRATION PLATFORM
+            </span>
+</div>
+<h3 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface uppercase font-bold tracking-tight">
+            Event Management System
+          </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            A comprehensive web application designed to eliminate friction in campus and organizational event planning. Focused on frictionless event creation, registration handling, real-time participant ledger updates, and dynamic database state persistence.
+          </p>
+<!-- System Highlights Checklist -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-sm">
+<div class="bg-surface-container-lowest p-space-sm shadow-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<div>
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-semibold block">Real-time Registration</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Immediate write transactions to Firebase without page reload cycles.</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm shadow-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+<div>
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-semibold block">Atomic Event Ledger</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prevents oversubscription through programmatic client-side validation logic.</span>
+</div>
+</div>
+</div>
+<!-- Technologies Stratification Chips -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface font-mono-sm text-mono-sm uppercase">HTML5</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface font-mono-sm text-mono-sm uppercase">CSS3 Grid / Flexbox</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface font-mono-sm text-mono-sm uppercase">JavaScript (ES6+)</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container font-mono-sm text-mono-sm uppercase font-semibold">Firebase Realtime DB</span>
+</div>
+</div>
+<!-- Trigger Button -->
+<div class="pt-space-lg flex items-center gap-space-md">
+<a class="px-5 py-3 bg-surface-container-high text-on-surface font-mono-sm text-mono-sm uppercase font-bold hover:bg-surface-bright transition-all flex items-center gap-2 shadow-sm" href="https://github.com/shreyash-128/Event-management-" rel="noopener noreferrer" target="_blank">
+<span class="text-primary font-mono">&gt;_</span>
+<span>INSPECT REPOSITORY</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">OPEN SOURCE // PUBLIC MIT</span>
+</div>
+</div>
+<!-- Secondary Data Visualization / System Architecture Schematic -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-mono-micro text-mono-micro uppercase text-primary tracking-wider">[ TRANSACTION FLOW ]</span>
+<span class="font-mono-micro text-mono-micro text-outline font-mono">FLOW: SYNC_02</span>
+</div>
+<!-- Technical Schema Visualization -->
+<div class="bg-surface-container-lowest p-space-md shadow-inner flex flex-col gap-3 font-mono-sm text-mono-sm">
+<div class="flex items-center justify-between p-2 bg-surface-container-high text-on-surface">
+<span>[01] CLIENT ACTION</span>
+<span class="text-primary">SUBMIT REGISTRATION</span>
+</div>
+<div class="text-center text-outline-variant font-mono">↓</div>
+<div class="flex items-center justify-between p-2 bg-surface-container-high text-on-surface">
+<span>[02] JS RUNTIME</span>
+<span class="text-secondary">INPUT VALIDATION</span>
+</div>
+<div class="text-center text-outline-variant font-mono">↓</div>
+<div class="flex items-center justify-between p-2 bg-primary-container text-on-primary font-bold">
+<span>[03] FIREBASE RTDB</span>
+<span>STATE PERSISTENCE</span>
+</div>
+<div class="text-center text-outline-variant font-mono">↓</div>
+<div class="flex items-center justify-between p-2 bg-surface-container-high text-on-surface">
+<span>[04] DOM RE-RENDER</span>
+<span class="text-primary-fixed">REALTIME SYNC</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<div class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">EXECUTION ENVIRONMENT</div>
+<div class="font-body-md text-body-md text-on-surface font-semibold">Standard W3C Browser APIs // No heavy wrappers</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 05. VERIFIED RECOGNITION (BEYOND THE CODE) -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest">
+<!-- Section Identifier Header -->
+<div class="w-full flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 bg-primary shadow-[0_0_8px_rgba(255,132,18,0.8)]"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-primary font-bold">
+          04 // VERIFIED INSTITUTIONAL RECOGNITION
+        </span>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline tracking-widest uppercase">
+        EVENT_DATE: 2026.08.22 // STATE LEVEL
+      </span>
+</div>
+<!-- Editorial Recognition Feature Card -->
+<div class="bg-surface-container-low p-space-lg md:p-space-xl shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Authentic Photographic Frame -->
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container-lowest shadow-2xl group">
+<!-- The verified ceremony image -->
+<img alt="Award Presentation Ceremony with Shri Devendra Fadnavis and Navi Mumbai Police" class="w-full h-full object-cover object-center filter contrast-110 group-hover:scale-[1.02] transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsQx_CpDtoXX2suXfk6oRozqIpm7TwbehoPOAV3WFc9uVTDLVbzFjuQr3dCOhsxqPQTlA_soBWEPvnqypJ1thohvWU57e1l4Zi1dpr8QdA76yJEfMreRdWjiA1jJe_ZvZOzqyJl5yYDfxAfjWs41cZYMTyBYb1oMHy9lrEcwUj06apKr7MNaZCM8BH_eBVkP52V3cPSu8c-jxI4YH72MXm5OXX_LFD5j7hOM4STowMuX5zinRpaKDaezkL7KMWLITpp6E"/>
+<!-- Glowing Amber Framing Flare -->
+<div class="absolute inset-0 pointer-events-none shadow-[inset_0_0_24px_rgba(0,0,0,0.8)]"></div>
+<!-- Bottom HUD Metadata Overlay -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between px-3 py-1.5 bg-surface-container-lowest/90 backdrop-blur-md">
+<span class="font-mono-micro text-mono-micro text-primary uppercase font-bold tracking-wider">
+              CEREMONY VERIFICATION PHOTO // 2026
+            </span>
+<span class="font-mono-micro text-mono-micro text-on-surface-variant uppercase tracking-widest font-mono">
+              HASH: NM-POLICE-CAMPUS-CONNECT
+            </span>
+</div>
+</div>
+<!-- Photo Caption & Team Affirmation -->
+<div class="flex items-center justify-between px-1">
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant">
+            OFFICIAL STAGE COMMENDATION // MAHARASHTRA GOVERNMENT
+          </span>
+<span class="font-mono-micro text-mono-micro uppercase text-primary font-bold">
+            COLLABORATIVE 7-MEMBER INITIATIVE
+          </span>
+</div>
+</div>
+<!-- Narrative Text Block with Monumental Typography -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Gigantic Editorial Typographic Accent -->
+<div class="flex flex-col">
+<span class="font-mono-micro text-mono-micro uppercase text-primary tracking-widest font-bold">
+            DISTINGUISHED HONOUR // FELICITATION
+          </span>
+<div class="font-display-hero text-headline-xl md:text-display-hero text-on-surface uppercase font-bold tracking-tight leading-none">
+            3RD PRIZE
+          </div>
+<span class="font-mono-lg text-mono-lg uppercase text-secondary font-semibold tracking-wider mt-1">
+            STATE-LEVEL DISTINCTION
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h4 class="font-headline-md text-headline-md text-on-surface uppercase font-bold tracking-tight">
+            Inter-College Drug Awareness Reel Competition
+          </h4>
+<p class="font-mono-sm text-mono-sm uppercase text-primary-fixed">
+            Organized by Navi Mumbai Police // Campus Connect Initiative
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Awarded for conceptualizing, directing, and engineering an impactful civic awareness digital media presentation. Personally felicitated by <span class="text-on-surface font-semibold">Shri Devendra Fadnavis, Hon'ble Chief Minister of Maharashtra</span>, alongside senior officials of the Navi Mumbai Police department.
+        </p>
+<!-- Recognition Metadata Metrics -->
+<div class="bg-surface-container-lowest p-space-md shadow-inner flex flex-col gap-2">
+<div class="flex items-center justify-between font-mono-sm text-mono-sm">
+<span class="text-on-surface-variant uppercase">CHIEF GUEST:</span>
+<span class="text-on-surface font-semibold">Shri Devendra Fadnavis</span>
+</div>
+<div class="flex items-center justify-between font-mono-sm text-mono-sm">
+<span class="text-on-surface-variant uppercase">DATE:</span>
+<span class="text-on-surface font-semibold">22 August 2026</span>
+</div>
+<div class="flex items-center justify-between font-mono-sm text-mono-sm">
+<span class="text-on-surface-variant uppercase">INITIATIVE:</span>
+<span class="text-primary font-semibold">Campus Connect (Youth Outreach)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 06. TECHNICAL TAXONOMY (SKILLS MATRIX)     -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface">
+<!-- Section Identifier Header -->
+<div class="w-full flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 bg-primary shadow-[0_0_8px_rgba(255,132,18,0.7)]"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-on-surface-variant font-bold">
+          05 // TECHNICAL TAXONOMY &amp; CAPABILITIES
+        </span>
+</div>
+<span class="font-mono-micro text-mono-micro text-outline tracking-widest uppercase">
+        HONEST STRATIFICATION // NO FABRICATED BARS
+      </span>
+</div>
+<!-- Skills Container: Factual, Stratified, Dense -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Tier 1: Demonstrated in Production Code -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-primary tracking-widest font-bold block">
+                [ TIER 01 : APPLIED RIGOR ]
+              </span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase font-bold tracking-tight">
+                Demonstrated in Production Code
+              </h3>
+</div>
+<span class="px-2.5 py-1 bg-primary-container text-on-primary font-mono-micro text-mono-micro uppercase font-bold">
+              VERIFIED
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+            Technologies actively deployed across live web applications, academic tools, and open-source GitHub repositories.
+          </p>
+<div class="flex flex-col gap-space-md">
+<!-- Category A: Core Languages -->
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider block mb-2">
+                // FOUNDATIONAL SYSTEMS &amp; LANGUAGES
+              </span>
+<div class="flex flex-wrap gap-2">
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">01</span>
+<span>C</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">02</span>
+<span>C++</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">03</span>
+<span>Java</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">04</span>
+<span>Python</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">05</span>
+<span>JavaScript (ES6+)</span>
+</div>
+</div>
+</div>
+<!-- Category B: Frontend & Web Platforms -->
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider block mb-2">
+                // CLIENT INTERFACE &amp; BUNDLING
+              </span>
+<div class="flex flex-wrap gap-2">
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-secondary font-bold">&gt;</span>
+<span>React</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-secondary font-bold">&gt;</span>
+<span>Vite</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-secondary font-bold">&gt;</span>
+<span>Tailwind CSS</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-secondary font-bold">&gt;</span>
+<span>HTML5 / Modern DOM APIs</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-secondary font-bold">&gt;</span>
+<span>CSS3 Responsive Grid</span>
+</div>
+</div>
+</div>
+<!-- Category C: Database & Cloud Infrastructure -->
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider block mb-2">
+                // PERSISTENCE &amp; CLOUD DEPLOYMENT
+              </span>
+<div class="flex flex-wrap gap-2">
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">#</span>
+<span>Firebase Authentication</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">#</span>
+<span>Cloud Firestore</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">#</span>
+<span>Firebase Realtime Database</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">#</span>
+<span>SQL Fundamentals</span>
+</div>
+<div class="px-3 py-1.5 bg-surface-container-lowest text-on-surface font-mono-sm text-mono-sm flex items-center gap-2 shadow-sm">
+<span class="text-primary font-bold">#</span>
+<span>Cloudflare Pages</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t-0 flex items-center justify-between font-mono-micro text-mono-micro text-on-surface-variant">
+<span>SOURCE CODE AUDITABLE ON GITHUB</span>
+<span class="text-primary font-bold">ZERO SYNTHETIC METRICS</span>
+</div>
+</div>
+<!-- Tier 2: Active Inquiry & Academic Research -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-lg shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-widest font-bold block">
+                [ TIER 02 : SYSTEM HORIZONS ]
+              </span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase font-bold tracking-tight">
+                Active Inquiry &amp; Research
+              </h3>
+</div>
+<span class="px-2.5 py-1 bg-surface-container-high text-on-surface-variant font-mono-micro text-mono-micro uppercase font-bold">
+              IN PROGRESS
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+            Theoretical frameworks, low-level architecture paradigms, and mathematical models currently under continuous study through Semester 3 engineering coursework and targeted reading.
+          </p>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-bold">AI / ML Fundamentals</span>
+<span class="font-mono-micro text-mono-micro text-primary uppercase font-mono">DISCIPLINE 01</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Mathematical foundations of gradient descent, neural matrix operations, and integration of transformer inference APIs into full-stack client architectures.
+              </p>
+</div>
+<div class="p-space-sm bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-bold">Cybersecurity Principles</span>
+<span class="font-mono-micro text-mono-micro text-primary uppercase font-mono">DISCIPLINE 02</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Web security postures: CORS policies, JWT token lifecycle management, database injection prevention, and secure cloud authorization rules.
+              </p>
+</div>
+<div class="p-space-sm bg-surface-container-lowest shadow-sm flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-bold">Distributed Systems &amp; WebGL</span>
+<span class="font-mono-micro text-mono-micro text-primary uppercase font-mono">DISCIPLINE 03</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                High-performance GPU browser shaders, real-time matrix transformations with Three.js, and consensus protocols in distributed state synchronization.
+              </p>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-2">
+<span class="w-2 h-2 bg-secondary"></span>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant tracking-wider">
+            SEMESTER 3 &amp; 4 CURRICULAR EXPANSION
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 07. DIRECT INQUIRY & FOOTER CLOSING        -->
+<!-- ========================================== -->
+<section class="w-full px-margin-mobile md:px-margin py-space-xl bg-surface-container-lowest relative overflow-hidden">
+<!-- Thermal Ambient Glow -->
+<div class="absolute bottom-0 right-1/4 w-[500px] h-[350px] bg-primary-container/10 blur-[130px] pointer-events-none"></div>
+<div class="relative z-10 bg-surface-container-low p-space-lg md:p-space-xl shadow-2xl flex flex-col gap-space-xl">
+<!-- Call to Action Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-primary"></span>
+<span class="font-mono-micro text-mono-micro uppercase tracking-widest text-primary font-bold">
+              COMMUNICATION CHANNEL // DIRECT AUDIT
+            </span>
+</div>
+<h2 class="font-display-hero text-headline-xl md:text-display-hero text-on-surface uppercase font-bold tracking-tight leading-none">
+            HAVE A CHALLENGE WORTH SOLVING?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mt-2">
+            Available for Software Engineering, Frontend Architecture, and Web Development internships starting Summer 2027. Ready to contribute production code, learn from veteran architects, and build resilient software systems.
+          </p>
+</div>
+<!-- Recruiter Direct Contact Buttons -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm">
+<a class="px-6 py-4 bg-primary-container text-on-primary font-mono-lg text-mono-lg uppercase font-bold tracking-wider hover:bg-primary transition-all shadow-[0_0_24px_rgba(255,132,18,0.3)] flex items-center justify-between" href="https://www.linkedin.com/in/shreyash-choubey-054a2b362/" rel="noopener noreferrer" target="_blank">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">contact_mail</span>
+<span>CONNECT VIA LINKEDIN</span>
+</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</a>
+<a class="px-6 py-4 bg-surface-container-high text-on-surface font-mono-lg text-mono-lg uppercase font-semibold hover:bg-surface-bright transition-all shadow-sm flex items-center justify-between" href="https://github.com/shreyash-128" rel="noopener noreferrer" target="_blank">
+<span class="flex items-center gap-2">
+<span class="text-primary font-mono">&gt;_</span>
+<span>INSPECT GITHUB PROFILE</span>
+</span>
+<span class="material-symbols-outlined text-lg">code</span>
+</a>
+<a class="px-6 py-3 bg-surface-container-lowest text-on-surface-variant font-mono-sm text-mono-sm uppercase hover:text-primary transition-colors flex items-center justify-between shadow-inner" href="https://mustudysphere.pages.dev/" rel="noopener noreferrer" target="_blank">
+<span>LIVE PRODUCTION DEMO</span>
+<span class="material-symbols-outlined text-base">rocket_launch</span>
+</a>
+</div>
+</div>
+<!-- Factual Recruiter Quick-Facts Bar -->
+<div class="pt-space-md border-t-0 grid grid-cols-2 sm:grid-cols-4 gap-space-md bg-surface-container-lowest p-space-md shadow-inner">
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant block">PRIMARY LOCATION</span>
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-bold">MUMBAI, INDIA [IST]</span>
+</div>
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant block">DEGREE TARGET</span>
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-bold">B.E. COMP ENG (2029)</span>
+</div>
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant block">AVAILABILITY</span>
+<span class="font-mono-sm text-mono-sm uppercase text-primary font-bold">SUMMER 2027 INTERNSHIPS</span>
+</div>
+<div>
+<span class="font-mono-micro text-mono-micro uppercase text-on-surface-variant block">CORE REPERTOIRE</span>
+<span class="font-mono-sm text-mono-sm uppercase text-on-surface font-bold">REACT // FIREBASE // C++</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ========================================== -->
+<!-- THREE.JS INTERACTIVE KINETIC MONOLITH SCRIPT-->
+<!-- ========================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+  (function () {
+    const canvas = document.getElementById('kinetic-stage');
+    const hudAxis = document.getElementById('hud-axis');
+    const fallback = document.getElementById('monolith-fallback');
+
+    if (!canvas) return;
+
+    // Check WebGL Support
+    function hasWebGL() {
+      try {
+        const testCanvas = document.createElement('canvas');
+        return !!(window.WebGLRenderingContext && (testCanvas.getContext('webgl') || testCanvas.getContext('experimental-webgl')));
+      } catch (e) {
+        return false;
+      }
+    }
+
+    if (!hasWebGL() || typeof THREE === 'undefined') {
+      canvas.classList.add('hidden');
+      if (fallback) fallback.classList.remove('hidden');
+      return;
+    }
+
+    // Three.js Scene Setup
+    const scene = new THREE.Scene();
+    
+    // Orthographic Camera for Architectural Look
+    const aspect = canvas.clientWidth / canvas.clientHeight;
+    const frustumSize = 7.5;
+    const camera = new THREE.OrthographicCamera(
+      (frustumSize * aspect) / -2,
+      (frustumSize * aspect) / 2,
+      frustumSize / 2,
+      frustumSize / -2,
+      0.1,
+      1000
+    );
+    camera.position.set(8, 7, 8);
+    camera.lookAt(0, 0, 0);
+
+    const renderer = new THREE.WebGLRenderer({
+      canvas: canvas,
+      alpha: true,
+      antialias: true,
+      powerPreference: 'high-performance'
+    });
+    renderer.setSize(canvas.clientWidth, canvas.clientHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    // Master Monolith Group
+    const monolithGroup = new THREE.Group();
+    scene.add(monolithGroup);
+
+    // 1. Titanium Beveled Cube Core
+    const cubeGeo = new THREE.BoxGeometry(2.4, 2.4, 2.4);
+    const cubeMat = new THREE.MeshStandardMaterial({
+      color: 0x111115,
+      metalness: 0.85,
+      roughness: 0.25,
+      flatShading: true
+    });
+    const cubeMesh = new THREE.Mesh(cubeGeo, cubeMat);
+    monolithGroup.add(cubeMesh);
+
+    // 2. Razor Wireframe Edges
+    const edgesGeo = new THREE.EdgesGeometry(cubeGeo);
+    const edgesMat = new THREE.LineBasicMaterial({
+      color: 0xff8412,
+      linewidth: 1.5,
+      transparent: true,
+      opacity: 0.85
+    });
+    const cubeEdges = new THREE.LineSegments(edgesGeo, edgesMat);
+    monolithGroup.add(cubeEdges);
+
+    // 3. Floating Amber Inner Core (Pulsing Glow)
+    const innerGeo = new THREE.IcosahedronGeometry(0.7, 1);
+    const innerMat = new THREE.MeshBasicMaterial({
+      color: 0xff8412,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.75
+    });
+    const innerCore = new THREE.Mesh(innerGeo, innerMat);
+    monolithGroup.add(innerCore);
+
+    // 4. Gyroscopic Orbital Rings with Coordinate Nodes
+    const ring1Geo = new THREE.TorusGeometry(2.2, 0.02, 16, 100);
+    const ring1Mat = new THREE.MeshBasicMaterial({ color: 0xffb786, transparent: true, opacity: 0.4 });
+    const ring1 = new THREE.Mesh(ring1Geo, ring1Mat);
+    ring1.rotation.x = Math.PI / 3;
+    monolithGroup.add(ring1);
+
+    const ring2Geo = new THREE.TorusGeometry(2.8, 0.015, 16, 100);
+    const ring2Mat = new THREE.MeshBasicMaterial({ color: 0xdec1af, transparent: true, opacity: 0.25 });
+    const ring2 = new THREE.Mesh(ring2Geo, ring2Mat);
+    ring2.rotation.y = Math.PI / 4;
+    ring2.rotation.z = Math.PI / 6;
+    monolithGroup.add(ring2);
+
+    // Satellite coordinate beads
+    const beadGeo = new THREE.SphereGeometry(0.08, 8, 8);
+    const beadMat = new THREE.MeshBasicMaterial({ color: 0xff8412 });
+    const bead = new THREE.Mesh(beadGeo, beadMat);
+    bead.position.set(2.2, 0, 0);
+    ring1.add(bead);
+
+    // Lighting Setup
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+
+    const amberKeyLight = new THREE.PointLight(0xff8412, 3, 20);
+    amberKeyLight.position.set(4, 5, 4);
+    scene.add(amberKeyLight);
+
+    const titaniumFillLight = new THREE.DirectionalLight(0xffb786, 1.2);
+    titaniumFillLight.position.set(-6, -4, -5);
+    scene.add(titaniumFillLight);
+
+    // Parallax Pointer Tracking
+    let targetRotX = 0;
+    let targetRotY = 0;
+    let mouseX = 0;
+    let mouseY = 0;
+
+    function onPointerMove(e) {
+      const rect = canvas.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+      const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+      mouseX = x;
+      mouseY = y;
+      targetRotY = mouseX * 0.9;
+      targetRotX = -mouseY * 0.9;
+    }
+
+    window.addEventListener('mousemove', onPointerMove, { passive: true });
+
+    // Handle Window Resize
+    function onWindowResize() {
+      if (!canvas || !canvas.parentElement) return;
+      const width = canvas.parentElement.clientWidth;
+      const height = canvas.parentElement.clientHeight;
+      const newAspect = width / height;
+
+      camera.left = (-frustumSize * newAspect) / 2;
+      camera.right = (frustumSize * newAspect) / 2;
+      camera.top = frustumSize / 2;
+      camera.bottom = -frustumSize / 2;
+      camera.updateProjectionMatrix();
+
+      renderer.setSize(width, height);
+    }
+    window.addEventListener('resize', onWindowResize);
+
+    // Render Animation Loop
+    let clock = new THREE.Clock();
+    function animate() {
+      requestAnimationFrame(animate);
+      const elapsedTime = clock.getElapsedTime();
+
+      // Base idle mechanical rotation
+      cubeMesh.rotation.y += 0.004;
+      cubeMesh.rotation.x += 0.002;
+      cubeEdges.rotation.y = cubeMesh.rotation.y;
+      cubeEdges.rotation.x = cubeMesh.rotation.x;
+
+      innerCore.rotation.y -= 0.008;
+      innerCore.rotation.z += 0.006;
+      const pulseScale = 1 + Math.sin(elapsedTime * 2.5) * 0.08;
+      innerCore.scale.set(pulseScale, pulseScale, pulseScale);
+
+      ring1.rotation.z += 0.005;
+      ring2.rotation.x -= 0.004;
+
+      // Smooth Parallax Damping
+      monolithGroup.rotation.y += (targetRotY - monolithGroup.rotation.y) * 0.05;
+      monolithGroup.rotation.x += (targetRotX - monolithGroup.rotation.x) * 0.05;
+
+      // Update HUD axis stamp
+      if (hudAxis) {
+        const degX = (monolithGroup.rotation.x * (180 / Math.PI)).toFixed(1);
+        const degY = (monolithGroup.rotation.y * (180 / Math.PI)).toFixed(1);
+        hudAxis.innerText = `[ AXIS: X${degX >= 0 ? '+' : ''}${degX}° Y${degY >= 0 ? '+' : ''}${degY}° ]`;
+      }
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+    onWindowResize();
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full px-margin-mobile md:px-margin py-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md"><div class="flex flex-wrap items-center gap-space-md font-mono-micro text-mono-micro uppercase text-on-surface-variant"><span class="text-on-surface font-semibold">SHREYASH CHOUBEY // PORTFOLIO CORE</span><span class="text-outline-variant">|</span><span>AFFIL: UNIVERSITY OF MUMBAI [ENG. DEPT]</span><span class="text-outline-variant">|</span><span>LOC: [19.0760° N, 72.8777° E]</span><span class="text-outline-variant">|</span><span>SYS: BUILD 2025.10.KINETIC</span></div><div class="flex items-center justify-between md:justify-end w-full md:w-auto gap-space-lg font-mono-micro text-mono-micro uppercase text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 bg-primary rounded-none"></span><span>ALL SYSTEMS OPERATIONAL</span></div><span>© 2025 ALL RIGHTS RESERVED</span><a class="flex items-center gap-1 text-on-surface hover:text-primary transition-colors" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"><span class="material-symbols-outlined text-sm leading-none">arrow_upward</span><span>TOP</span></a></div></div></footer></body></html>
